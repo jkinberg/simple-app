@@ -5,3 +5,9 @@ Template.postItem.helpers({
     return a.hostname;
   }
 });
+
+Template.postItem.events({
+  'click button': function() {
+    Posts.update(this._id, {$inc : {likeCount : 1} });
+  }
+});

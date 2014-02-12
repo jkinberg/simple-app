@@ -2,6 +2,10 @@
   <div class="post">
     <div class="post-content">
       <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+        <div class="post-likes">
+          <button type="button" class="btn btn-default btn-sm">Like</button>
+          {{#if likeCount}}<span>{{likeCount}} Likes</span>{{/if}}
+        </div>
     </div>
   </div>
 </template>
