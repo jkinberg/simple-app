@@ -69,3 +69,28 @@ body {
 }
 .comments li h4 a { font-size: 12px; }
 .comments li p:last-child { margin-bottom: 0; }
+.dropdown-menu span {
+  display:block;
+  padding:3px 20px;
+  clear: both;
+  line-height:20px;
+  color:#bbb;
+  white-space:no-wrap;
+}
+.load-more{
+  display: block;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  -ms-border-radius:3px;
+  -o-border-radius:3px;
+  border-radius:3px;
+  background:rgba(0,0,0,0.05);
+  text-align:center;
+  height: 60px;
+  line-height:60px;
+  margin-bottom:10px;
+}
+.load-more:hover{
+  text-decoration:none;
+  background:rgba(0,0,0,0.1);
+}
