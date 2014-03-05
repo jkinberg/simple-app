@@ -2,11 +2,17 @@
   <div class="post">
     <div class="post-content">
       <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
-        <div class="post-likes">
-          <button type="button" class="btn btn-default btn-sm">Like</button>
-          {{#if likeCount}}<span>{{likeCount}} Likes</span>{{/if}}
-        </div>
+      <p>
+        submitted by {{author}}
+        {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
+      </p>
     </div>
+      <!--  
+      <div class="post-likes">
+        <button type="button" class="btn btn-default btn-sm">Like</button>
+        {{#if likeCount}}<span>{{likeCount}} Likes</span>{{/if}}
+      </div>
+      -->
     <a href="{{pathFor 'postPage'}}" class="discuss btn">Discuss</a>
   </div>
 </template>
