@@ -1,7 +1,7 @@
 var imageStore = new FS.Store.S3("images", {
   region: "us-east-1", //optional in most cases
-  accessKeyId: "AKIAIT4A2PPPJ2E3ZFLQ", //required if environment variables are not set
-  secretAccessKey: "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", //required if environment variables are not set
+  //accessKeyId: "", //required if environment variables are not set
+  //secretAccessKey: "", //required if environment variables are not set
   bucket: "simple-app-dev", //required
   folder: "/",
   ACL: "public-read", //optional, default is 'private', but you can allow public or secure access routed through your app URL
