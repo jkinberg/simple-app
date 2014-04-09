@@ -10,3 +10,4 @@ accounts-ui-bootstrap-dropdown
 accounts-password
 collectionFS
 cfs-s3
+iron-router
