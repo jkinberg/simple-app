@@ -11,3 +11,4 @@ accounts-password
 collectionFS
 cfs-s3
 iron-router
+cfs-filesystem

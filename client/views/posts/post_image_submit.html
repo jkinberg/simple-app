@@ -1,0 +1,36 @@
+<template name="postImageSubmit">
+  <!-- {{cfsFileInput imagesCollection class="myInputClass"}} -->
+  <form class="main">
+    <div class="control-group">
+      <label class="control-label" for="files">Upload Image</label>
+      <div class="controls">
+        <input type="file" name="files" multiple class="myFileInput" />
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <input type="submit" value="Upload" class="btn btn-primary"/>
+      </div>
+    </div>
+  </form>
+  <div>
+  {{#each images}}
+    {{#if cfsIsUploading}}
+      <p>{{cfsUploadProgressBar}} {{#if uploadsArePaused}}Paused!{{else}}Uploading...{{/if}}</p>
+    {{else}}
+      <h5>{{name}}</h5>
+      <p>{{cfsFormattedSize}}</p>
+      {{#if url}}
+        <div><a href="{{url}}" target="_blank"><img src="{{url}}" alt="" class="thumbnail" /></a></div>
+      {{/if}}
+      {{#if cfsIsDownloading}}
+        {{cfsDownloadProgressBar}}
+      {{else}}
+        {{cfsDownloadButton class="btn btn-xs"}}
+      {{/if}}
+      {{cfsDeleteButton class="btn btn-xs"}}
+    {{/if}}
+  {{/each}}
+  </div>
+  <!-- -->
+</template>
