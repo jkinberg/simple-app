@@ -6,13 +6,15 @@
       "spin": {},
       "accounts-ui-bootstrap-dropdown": {},
       "collectionFS": {},
-      "cfs-s3": {}
+      "cfs-s3": {},
+      "bootstrap-3": {},
+      "accounts-ui-bootstrap-3": {}
     },
     "packages": {
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.7.0",
-        "commit": "05f34bc48c4cad9fdaa366c1ddcabe6980232ece"
+        "tag": "v0.7.1",
+        "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
       },
       "spin": {
         "git": "https://github.com/SachaG/meteor-spin.git",
@@ -26,38 +28,48 @@
       },
       "collectionFS": {
         "git": "https://github.com/CollectionFS/Meteor-CollectionFS.git",
-        "tag": "v0.4.7",
-        "commit": "a3134540d9774e26dd63d2359e769eeed80715c8"
+        "tag": "v0.4.8",
+        "commit": "fea890b1e27799ccc9f71046748fb23a84330a16"
       },
       "cfs-s3": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-s3.git",
         "tag": "v0.0.26",
         "commit": "3ac6a7e5e97863a6a56f8d3695471ccecb085510"
       },
+      "bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
+        "tag": "v3.1.1-1",
+        "commit": "63dd38968828bb8963636df93e9a1c45e2dfe67e"
+      },
+      "accounts-ui-bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
+        "tag": "v0.3.0-1",
+        "commit": "93ffa5d0e325dc7026de89f6d90c178fa04bdd3a"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
-        "tag": "v0.2.2",
-        "commit": "8bc53798fe5965669ae67c72f91829fcfdceabfd"
+        "tag": "v0.2.4",
+        "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
       },
       "cfs-base-package": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-base-package.git",
-        "tag": "v0.0.21",
-        "commit": "996812ef50fbf5dd8ca8318811762771d9400aeb"
+        "tag": "v0.0.22",
+        "commit": "e35fdb103abf680c67b79561610c1d5d6c5e9593"
       },
       "cfs-file": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-file.git",
-        "tag": "v0.0.32",
-        "commit": "ea0187e88b5896f387ba85ff9e3dabc7c0b0a8a1"
-      },
-      "cfs-ejson-file": {
-        "git": "https://github.com/CollectionFS/Meteor-cfs-ejson-file.git",
-        "tag": "v0.0.7",
-        "commit": "aa80b46e73f3c9dcfec75106d1078b56be475bd7"
+        "tag": "v0.0.33",
+        "commit": "c74a4f71ca9356ee509f23094905f3a949f460b8"
       },
       "cfs-collection": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-collection.git",
-        "tag": "v0.4.7",
-        "commit": "beaa0f1d0045de267f51d0c54b7ad667a677bf21"
+        "tag": "v0.4.8",
+        "commit": "c358d07a0f2f82be8a2d26c1c203487b7300f895"
+      },
+      "cfs-collection-filters": {
+        "git": "https://github.com/CollectionFS/Meteor-cfs-collection-filters.git",
+        "tag": "v0.1.0",
+        "commit": "b48a5c9108d670f437696473a3c21872a11594ac"
       },
       "cfs-access-point": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-access-point.git",
@@ -92,12 +104,12 @@
       "data-man": {
         "git": "https://github.com/CollectionFS/Meteor-data-man.git",
         "branch": "master",
-        "commit": "2f53e4fee4246b9552046c1e05ba9ee5b169d900"
+        "commit": "eba0055619be2b5dfd7af6b4e946dc6fe393a040"
       },
       "cfs-upload-ddp": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-upload-ddp.git",
-        "tag": "v0.0.9",
-        "commit": "8306605b51a37123f01f1c9662bddc2f487c3c4d"
+        "tag": "v0.0.10",
+        "commit": "17caf4f38462017c9545d2187020a7f4596e8c4f"
       },
       "http-publish": {
         "git": "https://github.com/CollectionFS/Meteor-http-publish.git",
@@ -111,8 +123,8 @@
       },
       "cfs-tempstore": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-tempstore.git",
-        "tag": "v0.0.20",
-        "commit": "58640921f3b05148dc4ec0a7b8a691585bc4220a"
+        "tag": "v0.0.23",
+        "commit": "5d97f74373f2a08194b1a593f24dfe617e14350f"
       },
       "power-queue": {
         "git": "https://github.com/CollectionFS/Meteor-power-queue.git",
@@ -128,6 +140,11 @@
         "git": "https://github.com/CollectionFS/Meteor-cfs-graphicsmagick.git",
         "tag": "v0.0.12",
         "commit": "3ab945c2018aad2316eabf85ac1814e76a8ed627"
+      },
+      "cfs-ejson-file": {
+        "git": "https://github.com/CollectionFS/Meteor-cfs-ejson-file.git",
+        "tag": "v0.0.7",
+        "commit": "aa80b46e73f3c9dcfec75106d1078b56be475bd7"
       },
       "cfs-filesystem": {
         "git": "https://github.com/CollectionFS/Meteor-cfs-filesystem.git",

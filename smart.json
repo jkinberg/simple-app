@@ -4,6 +4,8 @@
     "spin": {},
     "accounts-ui-bootstrap-dropdown": {},
     "collectionFS": {},
-    "cfs-s3": {}
+    "cfs-s3": {},
+    "bootstrap-3": {},
+    "accounts-ui-bootstrap-3": {}
   }
 }

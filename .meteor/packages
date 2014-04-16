@@ -4,11 +4,12 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-bootstrap
 spin
-accounts-ui-bootstrap-dropdown
 accounts-password
 collectionFS
 cfs-s3
 iron-router
 cfs-filesystem
+accounts-facebook
+bootstrap-3
+accounts-ui-bootstrap-3
