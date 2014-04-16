@@ -1,0 +1,21 @@
+<template name="postImage">
+  {{#if cfsIsUploading "images"}}
+    <p>{{cfsQueueProgressBar class="uploadBar"}} {{#if cfsIsPaused "images"}}Paused!{{else}}Uploading...{{/if}}</p>
+  {{else}}
+    <h5>{{name}}</h5>
+    <p>{{cfsFormattedSize}}</p>
+    {{#if url}}
+      <div>
+        <a href="{{url}}" target="_blank">
+          <img src="{{url}}" alt="" class="thumbnail" />
+        </a>
+      </div>
+    {{/if}}
+    {{#if cfsIsDownloading "images"}}
+      {{cfsQueueProgressBar class="downloadBar"}}
+    {{else}}
+      {{cfsDownloadButton "images" class="btn btn-xs"}}
+    {{/if}}
+    {{cfsDeleteButton "images" class="btn btn-xs"}}
+  {{/if}}
+</template>

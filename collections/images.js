@@ -11,7 +11,7 @@ var imageStore = new FS.Store.S3("images", {
   maxTries: 3 //optional, default 5
 });
 
-Images = new FS.Collection("images", {
+ImagesFS = new FS.Collection("images", {
   stores: [imageStore],
   filter: {
     allow: {
@@ -20,7 +20,7 @@ Images = new FS.Collection("images", {
   }
 });
 
-Images.allow({
+ImagesFS.allow({
   insert: function(userId) {
     return !!userId;
   },

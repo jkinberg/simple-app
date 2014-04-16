@@ -3,5 +3,5 @@ Meteor.publish('posts', function() {
 });
 
 Meteor.publish("images", function() {
-  return Images.find();
+  return ImagesFS.find();
 });
