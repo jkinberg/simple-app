@@ -1,4 +1,4 @@
-Meteor.subscribe("images");
+//Meteor.subscribe("images");
 
 /*
 Template.postImageSubmit.helpers({

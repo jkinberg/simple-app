@@ -6,6 +6,7 @@
     "collectionFS": {},
     "cfs-s3": {},
     "bootstrap-3": {},
-    "accounts-ui-bootstrap-3": {}
+    "accounts-ui-bootstrap-3": {},
+    "accounts-ui-bootstrap-3-blaze": {}
   }
 }
