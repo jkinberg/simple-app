@@ -1,0 +1,24 @@
+<template name="postImageSubmit">
+  {{cfsFileInput "ImagesFS" class="myInputClass"}}
+  <form class="main">
+    <div class="control-group">
+      <label class="control-label" for="files">Upload Image</label>
+      <div class="controls">
+        <input type="file" name="files" class="myFileInput" multiple />
+      </div>
+    </div>
+    <!-- 
+    <div class="control-group">
+      <div class="controls">
+        <input type="submit" value="Upload" class="btn btn-primary"/>
+      </div>
+    </div>
+    -->
+  </form>
+  <div>
+  {{#each images}}
+    {{> postImage}}
+  {{/each}}
+  </div>
+  <!-- -->
+</template>
